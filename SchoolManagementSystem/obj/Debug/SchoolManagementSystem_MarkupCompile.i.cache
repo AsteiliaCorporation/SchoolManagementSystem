@@ -1,0 +1,20 @@
+﻿SchoolManagementSystem
+
+
+winexe
+C#
+.cs
+D:\Projects\Visual Studio\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\
+SchoolManagementSystem
+none
+false
+DEBUG;TRACE
+D:\Projects\Visual Studio\SchoolManagementSystem\SchoolManagementSystem\App.xaml
+35605500205
+1313982707
+50-2093614271
+32-2123188163
+Colors\Colors.xaml;Themes\Dark.xaml;Themes\Light.xaml;Icons\icons.xaml;MainWindow.xaml;MVVM\View\AccountView.xaml;MVVM\View\ActivitiesView.xaml;MVVM\View\AdministrationView.xaml;MVVM\View\AuthorizationView.xaml;MVVM\View\CompetitionsView.xaml;MVVM\View\EventsView.xaml;MVVM\View\HomeView.xaml;MVVM\View\LogbookView.xaml;MVVM\View\MaterialsView.xaml;MVVM\View\MobileAppView.xaml;MVVM\View\OfficeWorkView.xaml;MVVM\View\PrimaryView.xaml;MVVM\View\SettingsView.xaml;MVVM\View\StatisticsView.xaml;MVVM\View\TasksView.xaml;MVVM\View\TestsView.xaml;Styles\CloseButton.xaml;Styles\DataGrid.xaml;Styles\HeaderButton.xaml;Styles\HeaderButtonFifth.xaml;Styles\HeaderButtonFourth.xaml;Styles\HeaderButtonSecond.xaml;Styles\HeaderButtonThird.xaml;Styles\HeaderComboBox.xaml;Styles\HeaderImageButton.xaml;Styles\MenuButton.xaml;Styles\MenuGuideButton.xaml;Styles\ScrollBar.xaml;Styles\ScrollViewer.xaml;Styles\TitlebarButton.xaml;
+
+False
+

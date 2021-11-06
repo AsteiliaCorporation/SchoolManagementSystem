@@ -1,0 +1,223 @@
+﻿<UserControl x:Class="SchoolManagementSystem.MVVM.View.PrimaryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SchoolManagementSystem.MVVM.View"
+             xmlns:viewModel="clr-namespace:SchoolManagementSystem.MVVM.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="600"
+             d:DesignWidth="1100"
+             Background="{DynamicResource B500}"
+             Foreground="{DynamicResource B0}"
+             SizeChanged="Window_SizeChanged">
+    
+    <UserControl.DataContext>
+        <viewModel:MainViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="0 0 0 1"
+                BorderBrush="#4b0082">
+            <Grid Background="{DynamicResource B750}"
+              Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Name="Logo" Width="235"/>
+                    <ColumnDefinition Width="42"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="41.25"/>
+                    <ColumnDefinition Width="41.25"/>
+                    <ColumnDefinition Width="41.25"/>
+                    <ColumnDefinition Width="77.744"/>
+                    <ColumnDefinition Width="18.256"/>
+                    <ColumnDefinition Width="18.923"/>
+                    <ColumnDefinition Width="22.077"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="A S T E I L I A"
+                       Name="LogoName"
+                       Grid.Column="0"
+                       HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center"
+                       FontWeight="Medium"
+                       FontSize="26" Margin="0,6,0,5"
+                       MouseDown="Logo_MouseDown"/>
+                <Button Grid.Column="1"
+                    Style="{StaticResource HeaderButton}"/>
+                <ComboBox Grid.Column="2"
+                      Style="{DynamicResource HeaderComboBox}"
+                      ItemContainerStyle="{DynamicResource HeaderComboBoxItemTheme}"
+                      ItemsPanel="{DynamicResource HeaderComboBoxItemsPanelTheme}"
+                      SelectedIndex="0"
+                      FontSize="10"
+                      TextBlock.TextAlignment="Center"
+                      VerticalContentAlignment="Center">
+                    <ComboBoxItem>
+                        <TextBlock Text="2021 - 2022"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="2020 - 2021"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="2019 - 2020"/>
+                    </ComboBoxItem>
+                </ComboBox>
+                <TextBlock Text="🏫 PMG 'Acad. Boyan Petkanchin' – Haskovo"
+                       Grid.Column="3"
+                       HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center"
+                       FontWeight="Medium"
+                       FontSize="18"
+                       FontFamily="Open Sans"
+                       Margin="0,12"/>
+                <Button Grid.Column="4"
+                    Style="{StaticResource HeaderButtonSecond}"/>
+                <Button Grid.Column="5"
+                    Style="{StaticResource HeaderButtonThird}"/>
+                <Button Grid.Column="6"
+                    Style="{StaticResource HeaderButtonFourth}"/>
+                <Button Grid.Column="7"
+                        Name="btnAccount"
+                    Grid.ColumnSpan="2"
+                    Content="Alikoch"
+                    Style="{StaticResource HeaderImageButton}"
+                    Click="AccountButton_Click"/>
+                <Button Grid.Column="9"
+                    Click="SignOutButton_Click" Grid.ColumnSpan="2"
+                    Style="{StaticResource HeaderButtonFifth}"/>
+            </Grid>
+        </Border>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name="Menu" Width="235"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="2"
+                    Grid.Column="0"
+                    BorderThickness="0 0 1 0"
+                    BorderBrush="#4b0082">
+                <ScrollViewer Name="MenuScrollViewer"
+                          Background="{DynamicResource B750}"
+                          Style="{StaticResource ScrollViewer}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                            <RowDefinition Height="39"/>
+                        </Grid.RowDefinitions>
+                        <RadioButton Grid.Row="0"
+                                 x:Name="homeRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Home"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource home}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="1"
+                                 x:Name="logbookRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Logbook"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource logbook}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="2"
+                                 x:Name="tasksRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Tasks"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource task}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="3"
+                                 x:Name="statisticsRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Statistics"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource statistics}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="4"
+                                 x:Name="activitiesRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Activities"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource running}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="5"
+                                 x:Name="materialsRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Materials"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource books}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="6"
+                                 x:Name="testsRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Tests"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource exam}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="7"
+                                 x:Name="eventsRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Events"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource event}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="8"
+                                 x:Name="competitionsRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Competitions"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource trophy}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="9"
+                                 x:Name="officeWorkRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Office Work"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource document}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <RadioButton Grid.Row="10"
+                                 x:Name="administrationRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Administration"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource admin}"
+                                 Style="{StaticResource MenuButton}"/>
+                        <Button Grid.Row="11"
+                                 x:Name="guideRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Guide"
+                                 Click="GuideButton_Click"
+                                 Tag="{StaticResource question}"
+                                 Style="{StaticResource MenuGuideButton}"/>
+                        <RadioButton Grid.Row="12"
+                                 x:Name="mobileAppRadioButton"
+                                 Foreground="#ffffff"
+                                 Content="Mobile App"
+                                 Checked="RadioButton_Checked"
+                                 Tag="{StaticResource phone}"
+                                 Style="{StaticResource MenuButton}"/>
+                    </Grid>
+                </ScrollViewer>
+            </Border>
+            <Grid Grid.Column="1"
+                  Grid.Row="2">
+                <ContentControl x:Name="contentControl"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

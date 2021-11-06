@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="SchoolManagementSystem.MVVM.View.ActivitiesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SchoolManagementSystem.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="600"
+             d:DesignWidth="1100"
+             Background="{DynamicResource B500}"
+             Foreground="White">
+    
+    <ScrollViewer Style="{StaticResource ScrollViewer}">
+        <Grid>
+            <TextBlock TextAlignment="Center"
+                       Text="ACTIVITIES"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

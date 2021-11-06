@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Dark Mode -->
+    <Color x:Key="C1000">#202225</Color>
+    <Color x:Key="C750">#292b2f</Color>
+    <Color x:Key="C500">#2F3136</Color>
+    <Color x:Key="C250">#34373C</Color>
+    <Color x:Key="C125">#36393F</Color>
+    <Color x:Key="C75">#40444B</Color>
+    <Color x:Key="C0">#FFFFFF</Color>
+    
+    <SolidColorBrush x:Key="B1000" Color="{StaticResource C1000}"/>
+    <SolidColorBrush x:Key="B750" Color="{StaticResource C750}"/>
+    <SolidColorBrush x:Key="B500" Color="{StaticResource C500}"/>
+    <SolidColorBrush x:Key="B250" Color="{StaticResource C250}"/>
+    <SolidColorBrush x:Key="B125" Color="{StaticResource C125}"/>
+    <SolidColorBrush x:Key="B75" Color="{StaticResource C75}"/>
+    <SolidColorBrush x:Key="B0" Color="{StaticResource C0}"/>
+    
+</ResourceDictionary>

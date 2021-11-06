@@ -1,0 +1,82 @@
+﻿<Application x:Class="SchoolManagementSystem.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SchoolManagementSystem"
+             xmlns:viewModel="clr-namespace:SchoolManagementSystem.MVVM.ViewModel"
+             xmlns:view="clr-namespace:SchoolManagementSystem.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/TitlebarButton.xaml"/>
+                <ResourceDictionary Source="Styles/CloseButton.xaml"/>
+                <ResourceDictionary Source="Styles/MenuButton.xaml"/>
+                <ResourceDictionary Source="Styles/MenuGuideButton.xaml"/>
+                <ResourceDictionary Source="Styles/HeaderComboBox.xaml"/>
+                <ResourceDictionary Source="Styles/HeaderButton.xaml"/>
+                <ResourceDictionary Source="Styles/HeaderButtonSecond.xaml"/>
+                <ResourceDictionary Source="Styles/HeaderButtonThird.xaml"/>
+                <ResourceDictionary Source="Styles/HeaderButtonFourth.xaml"/>
+                <ResourceDictionary Source="Styles/HeaderButtonFifth.xaml"/>
+                <ResourceDictionary Source="Styles/HeaderImageButton.xaml"/>
+                <ResourceDictionary Source="Styles/DataGrid.xaml"/>
+                <ResourceDictionary Source="Styles/ScrollViewer.xaml"/>
+                <ResourceDictionary Source="Styles/ScrollBar.xaml"/>
+                <ResourceDictionary Source="Icons/icons.xaml"/>
+                <ResourceDictionary Source="Themes/Dark.xaml"/>
+                <ResourceDictionary Source="Colors/Colors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:AuthorizationViewModel}">
+                <view:AuthorizationView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:PrimaryViewModel}">
+                <view:PrimaryView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:LogbookViewModel}">
+                <view:LogbookView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:TasksViewModel}">
+                <view:TasksView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:StatisticsViewModel}">
+                <view:StatisticsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ActivitiesViewModel}">
+                <view:ActivitiesView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:MaterialsViewModel}">
+                <view:MaterialsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:TestsViewModel}">
+                <view:TestsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:EventsViewModel}">
+                <view:EventsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:CompetitionsViewModel}">
+                <view:CompetitionsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:OfficeWorkViewModel}">
+                <view:OfficeWorkView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:AdministrationViewModel}">
+                <view:AdministrationView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:MobileAppViewModel}">
+                <view:MobileAppView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:AccountViewModel}">
+                <view:AccountView/>
+            </DataTemplate>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

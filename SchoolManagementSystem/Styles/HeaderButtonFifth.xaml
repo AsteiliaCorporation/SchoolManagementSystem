@@ -1,0 +1,35 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Style BasedOn="{StaticResource {x:Type Button}}"
+           TargetType="{x:Type Button}"
+           x:Key="HeaderButtonFifth">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid HorizontalAlignment="Stretch" 
+                              VerticalAlignment="Stretch"
+                              Background="{TemplateBinding Background}">
+                            <Path Data="M 8 2 C 6.895 2 6 2.895 6 4 L 6 20 C 6 21.105 6.895 22 8 22 L 16 22 C 17.105 22 18 21.105 18 20 L 18 15 L 16 15 L 16 20 L 8 20 L 8 4 L 16 4 L 16 9 L 18 9 L 18 4 C 18 2.895 17.105 2 16 2 L 8 2 z M 20 8 L 20 11 L 11 11 L 11 13 L 20 13 L 20 16 L 24 12 L 20 8 z"
+                                  Width="16"
+                                  Height="16"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Fill="White"
+                                  Stretch="Uniform"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+        </Style.Setters>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource B500}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
