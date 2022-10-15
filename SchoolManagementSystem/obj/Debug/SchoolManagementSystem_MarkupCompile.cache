@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-d:\Projects\GitHub\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\
+D:\Projects\GitHub\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\
 SchoolManagementSystem
 none
 false
 DEBUG;TRACE
-d:\Projects\GitHub\SchoolManagementSystem\SchoolManagementSystem\App.xaml
+D:\Projects\GitHub\SchoolManagementSystem\SchoolManagementSystem\App.xaml
 351626678997
 1-571110791
-50-1411246784
-32-1231554252
+49961942391
+32634274068
 Colors\Colors.xaml;Themes\Dark.xaml;Themes\Light.xaml;Icons\icons.xaml;MainWindow.xaml;MVVM\View\AccountView.xaml;MVVM\View\ActivitiesView.xaml;MVVM\View\AdministrationView.xaml;MVVM\View\AuthorizationView.xaml;MVVM\View\CompetitionsView.xaml;MVVM\View\EventsView.xaml;MVVM\View\HomeView.xaml;MVVM\View\LogbookView.xaml;MVVM\View\MaterialsView.xaml;MVVM\View\MobileAppView.xaml;MVVM\View\OfficeWorkView.xaml;MVVM\View\PrimaryView.xaml;MVVM\View\SettingsView.xaml;MVVM\View\StatisticsView.xaml;MVVM\View\TasksView.xaml;MVVM\View\TestsView.xaml;Styles\CloseButton.xaml;Styles\DataGrid.xaml;Styles\HeaderButton.xaml;Styles\HeaderButtonFifth.xaml;Styles\HeaderButtonFourth.xaml;Styles\HeaderButtonSecond.xaml;Styles\HeaderButtonThird.xaml;Styles\HeaderComboBox.xaml;Styles\HeaderImageButton.xaml;Styles\MenuButton.xaml;Styles\MenuGuideButton.xaml;Styles\ScrollBar.xaml;Styles\ScrollViewer.xaml;Styles\TitlebarButton.xaml;
 
 True
